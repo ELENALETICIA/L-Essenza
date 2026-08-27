@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>L’Essenza</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>L’Essenza</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="restaurantes.html">Restaurantes</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="index.html" style="color: #ff9999;">Cerrar Sesión</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Nuestra identidad</h2>
+            <p>
+                Bienvenido a L’Essenza, un restaurante italiano donde la tradición y la elegancia
+                se combinan para ofrecer una experiencia gastronómica única. Desde nuestros inicios,
+                nos hemos dedicado a preparar recetas auténticas con ingredientes seleccionados de
+                la más alta calidad, inspirados en los sabores de Italia.
+            </p>
+
+            <article>
+                <h3>Noticia del Mes: Nuevo Menú de Temporada</h3>
+                <p>
+                    L’Essenza presenta nuevos platillos inspirados en la cocina italiana clásica,
+                    con pastas artesanales, salsas especiales y sabores únicos para nuestros clientes.
+                </p>
+            </article>
+
+            <article>
+                <h3>Opinión de un Cliente Especial</h3>
+                <p>
+                    <em>
+                        "La atención, el ambiente elegante y el auténtico sabor italiano hacen de
+                        L’Essenza un lugar perfecto para disfrutar una experiencia inolvidable."
+                    </em>
+                    - Andrea R.
+                </p>
+            </article>
+        </section>
+
+        <section class="contenedor-flex">
+            <div class="texto-informacion">
+                <h2>Información de L'Essenza</h2>
+                <h3>Horarios de atención</h3>
+                <p>Lunes a Viernes: 12:00 PM - 10:00 PM</p>
+                <p>Sábados y Domingos: 1:00 PM - 11:00 PM</p>
+
+                <h3>Ubicación del Restaurante</h3>
+                <p>Via Roma #245, Zona Centro</p>
+
+                <h3>Reservaciones y Atención al Cliente</h3>
+                <p>Tel. +503 2458-1020 (Reservas)</p>
+
+                <h3>Correo de contacto</h3>
+                <p>contacto@lessenza.com</p>
+            </div>
+
+            <figure class="imagen-informacion">
+                <img src="inicioimg.png" alt="Restaurante L'Essenza">
+            </figure>
+        </section>
+
+        <section class="contenedor-flex">
+            <div class="texto-informacion">
+                <h2>Reservaciones</h2>
+                <p>
+                    Reserva tu mesa en L’Essenza y disfruta de una experiencia
+                    gastronómica italiana única.
+                </p>
+
+                <form class="formulario-reserva" action="reservación.html">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+
+                    <label for="personas">Número de personas:</label>
+                    <select id="personas" name="personas" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 personas</option>
+                        <option value="3">3 personas</option>
+                        <option value="4">4 personas</option>
+                        <option value="5">5 personas</option>
+                        <option value="6">6 personas</option>
+                        <option value="7">7 personas</option>
+                        <option value="8">8 personas</option>
+                    </select>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+
+                    <label for="comentarios">Comentarios especiales:</label>
+                    <textarea id="comentarios" name="comentarios" placeholder="Alguna petición especial..."></textarea>
+
+                    <button type="submit">Reservar mesa</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="font-family: 'Lora', serif; text-align: center; padding: 20px;">
+        <p>&copy; 2026 L’Essenza. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
